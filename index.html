@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>반갑습니다 개발자입니다</title>
+    <title>My Webcrumbs Plugin</title>
     <style>
       @import url(https://fonts.googleapis.com/css2?family=Lato&display=swap);
 
@@ -323,47 +323,54 @@
         --tw-contain-paint: ;
         --tw-contain-style: ;
       }
+      #webcrumbs .mx-auto {
+        margin-left: auto;
+        margin-right: auto;
+      }
       #webcrumbs .mt-2 {
         margin-top: 8px;
       }
       #webcrumbs .mt-4 {
         margin-top: 16px;
       }
-      #webcrumbs .mt-6 {
-        margin-top: 24px;
-      }
-      #webcrumbs .mt-8 {
-        margin-top: 32px;
+      #webcrumbs .block {
+        display: block;
       }
       #webcrumbs .flex {
         display: flex;
       }
+      #webcrumbs .grid {
+        display: grid;
+      }
       #webcrumbs .h-\[150px\] {
         height: 150px;
       }
-      #webcrumbs .h-\[40px\] {
-        height: 40px;
+      #webcrumbs .h-\[200px\] {
+        height: 200px;
+      }
+      #webcrumbs .min-h-\[800px\] {
+        min-height: 800px;
+      }
+      #webcrumbs .w-\[1200px\] {
+        width: 1200px;
       }
       #webcrumbs .w-\[150px\] {
         width: 150px;
       }
-      #webcrumbs .w-\[40px\] {
-        width: 40px;
+      #webcrumbs .w-full {
+        width: 100%;
       }
-      #webcrumbs .w-\[800px\] {
-        width: 800px;
+      #webcrumbs .grid-cols-1 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
       }
       #webcrumbs .flex-row {
         flex-direction: row;
       }
-      #webcrumbs .items-start {
-        align-items: flex-start;
+      #webcrumbs .flex-wrap {
+        flex-wrap: wrap;
       }
       #webcrumbs .items-center {
         align-items: center;
-      }
-      #webcrumbs .justify-center {
-        justify-content: center;
       }
       #webcrumbs .justify-between {
         justify-content: space-between;
@@ -374,6 +381,22 @@
       #webcrumbs .gap-6 {
         gap: 24px;
       }
+      #webcrumbs .gap-8 {
+        gap: 32px;
+      }
+      #webcrumbs :is(.space-y-12 > :not([hidden]) ~ :not([hidden])) {
+        --tw-space-y-reverse: 0;
+        margin-bottom: calc(48px * var(--tw-space-y-reverse));
+        margin-top: calc(48px * (1 - var(--tw-space-y-reverse)));
+      }
+      #webcrumbs :is(.space-y-4 > :not([hidden]) ~ :not([hidden])) {
+        --tw-space-y-reverse: 0;
+        margin-bottom: calc(16px * var(--tw-space-y-reverse));
+        margin-top: calc(16px * (1 - var(--tw-space-y-reverse)));
+      }
+      #webcrumbs .overflow-hidden {
+        overflow: hidden;
+      }
       #webcrumbs .rounded-full {
         border-radius: 9999px;
       }
@@ -383,19 +406,89 @@
       #webcrumbs .rounded-md {
         border-radius: 18px;
       }
-      #webcrumbs .bg-primary-500 {
+      #webcrumbs .rounded-t-lg {
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+      }
+      #webcrumbs .border-b-2 {
+        border-bottom-width: 2px;
+      }
+      #webcrumbs .border-neutral-300 {
+        --tw-border-opacity: 1;
+        border-color: rgb(202 202 202 / var(--tw-border-opacity));
+      }
+      #webcrumbs .bg-blue-100 {
         --tw-bg-opacity: 1;
-        background-color: rgb(115 65 255 / var(--tw-bg-opacity));
+        background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+      }
+      #webcrumbs .bg-blue-500 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+      }
+      #webcrumbs .bg-cyan-100 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(207 250 254 / var(--tw-bg-opacity));
+      }
+      #webcrumbs .bg-green-100 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(220 252 231 / var(--tw-bg-opacity));
+      }
+      #webcrumbs .bg-teal-100 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(204 251 241 / var(--tw-bg-opacity));
       }
       #webcrumbs .bg-white {
         --tw-bg-opacity: 1;
         background-color: rgb(255 255 255 / var(--tw-bg-opacity));
       }
+      #webcrumbs .bg-yellow-100 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(254 249 195 / var(--tw-bg-opacity));
+      }
+      #webcrumbs .bg-gradient-to-br {
+        background-image: linear-gradient(
+          to bottom right,
+          var(--tw-gradient-stops)
+        );
+      }
+      #webcrumbs .from-blue-300 {
+        --tw-gradient-from: #93c5fd var(--tw-gradient-from-position);
+        --tw-gradient-to: rgba(147, 197, 253, 0) var(--tw-gradient-to-position);
+        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+      }
+      #webcrumbs .to-purple-400 {
+        --tw-gradient-to: #c084fc var(--tw-gradient-to-position);
+      }
       #webcrumbs .object-contain {
         object-fit: contain;
       }
+      #webcrumbs .object-cover {
+        object-fit: cover;
+      }
+      #webcrumbs .p-4 {
+        padding: 16px;
+      }
       #webcrumbs .p-8 {
         padding: 32px;
+      }
+      #webcrumbs .px-4 {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+      #webcrumbs .px-6 {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+      #webcrumbs .py-2 {
+        padding-bottom: 8px;
+        padding-top: 8px;
+      }
+      #webcrumbs .py-3 {
+        padding-bottom: 12px;
+        padding-top: 12px;
+      }
+      #webcrumbs .pb-2 {
+        padding-bottom: 8px;
       }
       #webcrumbs .text-center {
         text-align: center;
@@ -404,40 +497,100 @@
         font-family: Lato, ui-sans-serif, system-ui, sans-serif,
           Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
       }
-      #webcrumbs .text-3xl {
-        font-size: 30px;
-        line-height: 36px;
+      #webcrumbs .text-2xl {
+        font-size: 24px;
+        line-height: 31.200000000000003px;
       }
-      #webcrumbs .text-neutral-500 {
+      #webcrumbs .text-4xl {
+        font-size: 36px;
+        line-height: 41.4px;
+      }
+      #webcrumbs .text-xl {
+        font-size: 20px;
+        line-height: 28px;
+      }
+      #webcrumbs .font-bold {
+        font-weight: 700;
+      }
+      #webcrumbs .font-semibold {
+        font-weight: 600;
+      }
+      #webcrumbs .text-blue-500 {
         --tw-text-opacity: 1;
-        color: rgb(153 153 153 / var(--tw-text-opacity));
+        color: rgb(59 130 246 / var(--tw-text-opacity));
+      }
+      #webcrumbs .text-blue-700 {
+        --tw-text-opacity: 1;
+        color: rgb(29 78 216 / var(--tw-text-opacity));
+      }
+      #webcrumbs .text-blue-800 {
+        --tw-text-opacity: 1;
+        color: rgb(30 64 175 / var(--tw-text-opacity));
+      }
+      #webcrumbs .text-cyan-800 {
+        --tw-text-opacity: 1;
+        color: rgb(21 94 117 / var(--tw-text-opacity));
+      }
+      #webcrumbs .text-green-800 {
+        --tw-text-opacity: 1;
+        color: rgb(22 101 52 / var(--tw-text-opacity));
+      }
+      #webcrumbs .text-neutral-700 {
+        --tw-text-opacity: 1;
+        color: rgb(103 103 103 / var(--tw-text-opacity));
+      }
+      #webcrumbs .text-neutral-900 {
+        --tw-text-opacity: 1;
+        color: rgb(70 70 70 / var(--tw-text-opacity));
       }
       #webcrumbs .text-neutral-950 {
         --tw-text-opacity: 1;
         color: rgb(40 40 40 / var(--tw-text-opacity));
       }
-      #webcrumbs .text-primary-50 {
+      #webcrumbs .text-teal-800 {
         --tw-text-opacity: 1;
-        color: rgb(243 241 255 / var(--tw-text-opacity));
+        color: rgb(17 94 89 / var(--tw-text-opacity));
       }
-      #webcrumbs .text-primary-950 {
+      #webcrumbs .text-white {
         --tw-text-opacity: 1;
-        color: rgb(34 1 116 / var(--tw-text-opacity));
+        color: rgb(255 255 255 / var(--tw-text-opacity));
       }
-      #webcrumbs .shadow {
-        --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
-          0 1px 2px -1px rgba(0, 0, 0, 0.1);
-        --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color),
-          0 1px 2px -1px var(--tw-shadow-color);
+      #webcrumbs .text-yellow-800 {
+        --tw-text-opacity: 1;
+        color: rgb(133 77 14 / var(--tw-text-opacity));
+      }
+      #webcrumbs .underline {
+        text-decoration-line: underline;
+      }
+      #webcrumbs .shadow-lg {
+        --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),
+          0 4px 6px -4px var(--tw-shadow-color);
+      }
+      #webcrumbs .shadow-lg,
+      #webcrumbs .shadow-md {
         box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
           var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+      }
+      #webcrumbs .shadow-md {
+        --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+          0 2px 4px -2px var(--tw-shadow-color);
       }
       #webcrumbs {
         font-family: Open Sans !important;
         font-size: 16px !important;
       }
-      #webcrumbs :is(.bg-primary-500) {
-        color: hsla(0, 0%, 100%, 0.9) !important;
+      #webcrumbs .hover\:bg-blue-600:hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+      }
+      @media (min-width: 768px) {
+        #webcrumbs .md\:grid-cols-2 {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
       }
 
       body {
@@ -455,60 +608,144 @@
   </head>
   <body>
     <div id="webcrumbs">
-      <div class="w-[800px] bg-white shadow rounded-lg p-8">
-        <header class="text-center">
-          <h1 class="font-title text-3xl text-primary-950">
-            Hello, I&#x27;m Yumi Park
-          </h1>
-          <p class="text-neutral-500 mt-2">
-            A passionate junior Back-End Developer
-          </p>
+      <div
+        class="w-[1200px] bg-white shadow-lg rounded-lg mx-auto min-h-[800px]"
+      >
+        <header
+          class="bg-gradient-to-br from-blue-300 to-purple-400 text-white p-8 rounded-t-lg"
+        >
+          <div class="flex items-center gap-6">
+            <img
+              src="https://tools-api.webcrumbs.org/image-placeholder/150/150/avatars/1"
+              alt="Profile"
+              class="w-[150px] h-[150px] rounded-full object-contain shadow-md"
+            />
+            <div>
+              <h1 class="text-4xl font-title font-bold">John Doe</h1>
+              <p class="text-xl mt-2">Full-Stack Developer</p>
+            </div>
+          </div>
         </header>
-        <section class="mt-6 flex items-start gap-6">
-          <img
-            src="https://tools-api.webcrumbs.org/image-placeholder/150/150/avatars/1"
-            alt="Profile Picture"
-            class="w-[150px] h-[150px] rounded-full object-contain"
-          />
-          <div>
-            <p class="text-neutral-950">
-              I have over a year of experience in data mining and data analysis
-              and am currently exploring backend development. I'm currently
-              honing my skills through the Programmers Bootcamp. With a diverse
-              background and a commitment to excellence, I bring a hardworking
-              and dedicated approach to every project.
-            </p>
-            <p class="text-neutral-950 mt-4">
-              Skills: R, Python, SQL, and more.
-            </p>
-            <p class="text-neutral-950 mt-4">
-              Let&#x27;s build something amazing together!
-            </p>
-          </div>
-        </section>
-        <footer class="mt-8 text-center">
-          <div class="flex justify-center gap-4">
-            <a
-              href="https://github.com"
-              class="w-[40px] h-[40px] bg-primary-500 rounded-md flex items-center justify-center text-primary-50"
+        <main class="p-8 space-y-12">
+          <section>
+            <h2
+              class="text-2xl font-title text-neutral-950 border-b-2 border-neutral-300 pb-2"
             >
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a
-              href="https://linkedin.com"
-              class="w-[40px] h-[40px] bg-primary-500 rounded-md flex items-center justify-center text-primary-50"
+              Skills
+            </h2>
+            <div class="flex flex-wrap gap-4 mt-4">
+              <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full"
+                >Python</span
+              >
+              <span class="px-4 py-2 bg-green-100 text-green-800 rounded-full"
+                >Java</span
+              >
+              <span class="px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full"
+                >JavaScript</span
+              >
+              <span class="px-4 py-2 bg-cyan-100 text-cyan-800 rounded-full"
+                >React</span
+              >
+              <span class="px-4 py-2 bg-teal-100 text-teal-800 rounded-full"
+                >Data Analysis</span
+              >
+            </div>
+          </section>
+          <section>
+            <h2
+              class="text-2xl font-title text-neutral-950 border-b-2 border-neutral-300 pb-2"
             >
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a
-              href="https://twitter.com"
-              class="w-[40px] h-[40px] bg-primary-500 rounded-md flex items-center justify-center text-primary-50"
+              Projects
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
+              <div class="rounded-md shadow-md overflow-hidden">
+                <img
+                  src="https://tools-api.webcrumbs.org/image-placeholder/500/300/project1/1"
+                  alt="Project 1"
+                  class="w-full h-[200px] object-cover"
+                />
+                <div class="p-4">
+                  <h3 class="text-xl font-semibold text-neutral-950">
+                    Project Title 1
+                  </h3>
+                  <p class="mt-2 text-neutral-700">
+                    Short description of the project and its purpose or
+                    features.
+                  </p>
+                  <a href="#" class="text-blue-500 underline mt-2 block"
+                    >View Demo</a
+                  >
+                </div>
+              </div>
+              <div class="rounded-md shadow-md overflow-hidden">
+                <img
+                  src="https://tools-api.webcrumbs.org/image-placeholder/500/300/project2/1"
+                  alt="Project 2"
+                  class="w-full h-[200px] object-cover"
+                />
+                <div class="p-4">
+                  <h3 class="text-xl font-semibold text-neutral-950">
+                    Project Title 2
+                  </h3>
+                  <p class="mt-2 text-neutral-700">
+                    Short description of the project and its purpose or
+                    features.
+                  </p>
+                  <a href="#" class="text-blue-500 underline mt-2 block"
+                    >View Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2
+              class="text-2xl font-title text-neutral-950 border-b-2 border-neutral-300 pb-2"
             >
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-          </div>
-          <p class="text-neutral-500 mt-4">byumm315@gmail.com</p>
-        </footer>
+              About
+            </h2>
+            <p class="mt-4 text-neutral-700">
+              I&#x27;m a passionate developer with a background in software
+              engineering and a love for building elegant solutions to complex
+              problems. My career highlights include working with diverse
+              technologies and contributing to cutting-edge projects in the tech
+              space.
+            </p>
+          </section>
+          <section>
+            <h2
+              class="text-2xl font-title text-neutral-950 border-b-2 border-neutral-300 pb-2"
+            >
+              Contact
+            </h2>
+            <div class="mt-4 space-y-4">
+              <a
+                href="mailto:john.doe@example.com"
+                class="block px-6 py-3 rounded-md bg-blue-500 text-white text-center hover:bg-blue-600"
+              >
+                Email Me
+              </a>
+              <div class="flex gap-6">
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-blue-700"
+                >
+                  <i class="fa-brands fa-linkedin fa-2x"></i>
+                </a>
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-neutral-900"
+                >
+                  <i class="fa-brands fa-github fa-2x"></i>
+                </a>
+              </div>
+            </div>
+          </section>
+        </main>
       </div>
     </div>
   </body>
